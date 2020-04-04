@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="500.0" prefWidth="600.0" styleClass="baseWindow" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="212.0" minWidth="10.0" prefWidth="201.0" />
+      <ColumnConstraints hgrow="NEVER" maxWidth="380.0" minWidth="0.0" prefWidth="35.0" />
+      <ColumnConstraints hgrow="NEVER" maxWidth="380.0" minWidth="10.0" prefWidth="122.0" />
+      <ColumnConstraints hgrow="NEVER" maxWidth="385.0" minWidth="0.0" prefWidth="173.0" />
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="296.0" minWidth="10.0" prefWidth="73.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="42.0" valignment="TOP" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="301.0" minHeight="0.0" prefHeight="81.0" valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints maxHeight="301.0" minHeight="10.0" prefHeight="64.0" valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints maxHeight="301.0" minHeight="7.0" prefHeight="69.0" valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints maxHeight="301.0" minHeight="10.0" prefHeight="39.0" valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints maxHeight="301.0" minHeight="10.0" prefHeight="155.0" valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints maxHeight="301.0" minHeight="10.0" prefHeight="27.0" valignment="CENTER" vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="425.0" GridPane.columnSpan="2147483647">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label prefHeight="30.0" prefWidth="300.0" text="Customer Information Repository" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label text="Quick Search:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <TableView fx:id="tv_company" prefHeight="350.0" prefWidth="200.0" GridPane.rowIndex="2" GridPane.rowSpan="4">
+        <columns>
+          <TableColumn fx:id="tc_company" prefWidth="199.0" text="Company" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#clk_viewDetails" text="View Details" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+   </children>
+</GridPane>

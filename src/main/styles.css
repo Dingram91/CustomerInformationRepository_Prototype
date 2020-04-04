@@ -1,0 +1,13 @@
+.baseWindow {
+  -fx-background-color: #819595;
+}
+
+.innerWindow
+{
+  -fx-background-color: rgb(181, 183, 187);
+}
+
+.backButton
+{
+  -fx-background-color: rgb(177,182,166);
+}
