@@ -5,3 +5,7 @@ This project is a prototype for the customer informatiopn repository project.
 ![](gifs/demo.gif)
 
 Executable JAR available under release 
+
+
+### Creator
+Dylan Ingram
